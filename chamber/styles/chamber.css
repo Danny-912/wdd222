@@ -1,0 +1,262 @@
+/* -------------------- */
+/* ROOT VARIABLES */
+/* -------------------1d4ed8-   #111827 *   #1E3A5F*/
+
+:root {
+    --primary-color: #00356B;
+    --dark-blue:  #1E3A5F;
+    --light-blue: #DBEAFE;
+    --background-color: #F8FAFC;
+    --text-color: #F8FAFC;
+    --white: #ffffff;
+
+    --heading-font: 'Poppings', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* -------------------- */
+/* GLOBAL STYLES */
+/* -------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: #F8FAFC;
+    line-height: 1.6;
+}
+
+/* -------------------- */
+/* TYPOGRAPHY */
+/* -------------------- */
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: var(--dark-blue);
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+
+header {
+    background-color: #00356B;
+    color: #F8FAFC;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-section img {
+    border-radius: 10px;
+}
+
+.logo-section p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* -------------------- */
+/* NAVIGATION */
+/* -------------------- */
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #F8FAFC;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #F8FAFC;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #F8FAFC;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    background-color: #F8FAFC;
+}
+
+.active {
+    background-color: #F8FAFC;
+}
+
+/* -------------------- */
+/* MAIN */
+/* -------------------- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* -------------------- */
+/* BUTTONS */
+/* -------------------- */
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.menu-buttons button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.menu-buttons button:hover {
+    background-color: #F8FAFC;
+}
+
+/* -------------------- */
+/* MEMBER CARDS */
+/* -------------------- */
+
+#members.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+#members section {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#members img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#members h3 {
+    margin: 1rem 0 0.5rem;
+    color: var(--dark-blue);
+}
+
+#members p {
+    margin: 0.5rem 0;
+}
+
+#members a {
+    color: var(--primary-color);
+    word-break: break-word;
+}
+
+/* -------------------- */
+/* LIST VIEW */
+/* -------------------- */
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#members.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
+#members.list img {
+    display: none;
+}
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+
+footer {
+    background-color: #00356B;
+    color: var(--white);
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer section {
+    margin-bottom: 2rem;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials img {
+    border-radius: 8px;
+}
+
+/* -------------------- */
+/* LINKS */
+/* -------------------- */
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* -------------------- */
+/* ACCESSIBILITY */
+/* -------------------- */
+
+img {
+    max-width: 100%;
+    display: block;
+}
