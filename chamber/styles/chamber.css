@@ -448,3 +448,65 @@ main {
 footer {
     margin-top: 2rem;
 }
+
+.join-container {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* desktop layout */
+@media (min-width: 768px) {
+  .join-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* form styling */
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+/* cards */
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* animation (NO hover) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* modal */
+dialog {
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+
+
