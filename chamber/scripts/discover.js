@@ -1,4 +1,4 @@
-import { places } from "../data/places.mjs";
+import { places } from "../data/place.mjs";
 
 const cards = document.querySelector("#discover-cards");
 
