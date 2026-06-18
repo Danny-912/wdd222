@@ -506,7 +506,121 @@ dialog {
   background: rgba(0,0,0,0.5);
 }
 
+/* ==========================
+DISCOVER PAGE
+========================== */
 
+.discover-title {
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+#visit-message {
+    background: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+#discover-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.discover-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+
+    display: grid;
+
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+
+    gap: .75rem;
+}
+
+.discover-card h2 {
+    grid-area: title;
+    color: var(--dark-blue);
+}
+
+.discover-card figure {
+    grid-area: image;
+    margin: 0;
+}
+
+.discover-card address {
+    grid-area: address;
+    font-style: normal;
+}
+
+.discover-card p {
+    grid-area: description;
+}
+
+.discover-card button {
+    grid-area: button;
+
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: .75rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* MEDIUM */
+
+@media (min-width: 641px) {
+
+.discover-card {
+
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas:
+        "image title"
+        "image address"
+        "image description"
+        "image button";
+}
+
+}
+
+
+/* LARGE */
+
+@media (min-width: 1025px) {
+
+.discover-card {
+
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-areas:
+        "title image"
+        "address image"
+        "description image"
+        "button image";
+}
+
+.discover-card img {
+    transition: transform .3s ease;
+}
+
+.discover-card img:hover {
+    transform: scale(1.05);
+}
+
+}
 
 
 
