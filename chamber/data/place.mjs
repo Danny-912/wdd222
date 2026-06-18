@@ -15,9 +15,9 @@ export const places = [
 },
 
 {
-    name: "Ring Road",
+    name: "Oba Market",
     address: "City Centre, Benin City",
-    image: "images/obamarket.webp.webp",
+    image: "images/obamarket.webp",
     description: "The commercial heart of Benin City with shops and businesses."
 },
 
