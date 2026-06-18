@@ -622,5 +622,29 @@ DISCOVER PAGE
 
 }
 
+/* ==========================
+   NAVIGATION
+========================== */
 
+nav {
+    display: flex;
+    gap: 1rem;
+}
 
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+    background-color: white;
+    color: var(--primary-color);
+}
